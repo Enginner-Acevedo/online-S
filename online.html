@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="online.css">
+    <link rel="shortcut icon" href="https://www.oasdom.com/wp-content/uploads/2018/01/oasdom.com-6-free-logo-design-online.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4dba8ed2b7.js" crossorigin="anonymous"></script>
+    <title>online servises</title>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img: url(https://cdn.teleticket.com.pe/especiales/disney-100-sinfonico/images/fondo-disney.jpg);"> 
+                <div class="content">
+                    <h2>disney</h2>
+                    <p>incluye todos los canales de ESPN</p>
+                </div>
+            </div>
+
+            <div class="slides" style="--img: url(https://www.themobileindian.com/wp-content/uploads/2023/03/Spotify-New-UI.jpg);"> 
+                <div class="content">
+                    <h2>spotify</h2>
+                    <p>El nuevo formato para escuchar música</p>
+                </div>
+            </div>
+
+            <div class="slides" style="--img: url(https://images-na.ssl-images-amazon.com/images/I/B15BMSbGamS.png);"> 
+                <div class="content">
+                    <h2>crunchyroll</h2>
+                    <p>Disfruta de los animes más populares</p>
+                </div>
+            </div>
+
+            <div class="slides" style="--img: url(  https://wallpapercave.com/wp/wp6889129.jpg);"> 
+                <div class="content">
+                    <h2>netflix</h2>
+                    <p>películas y series en streaming</p>
+                </div>
+            </div>
+
+            <div class="slides" style="--img: url(https://es.digitaltrends.com/wp-content/uploads/2021/03/primeras-impresiones-paramount-plus.jpg?p=1);"> 
+                <div class="content">
+                    <h2>paramount</h2>
+                    <p>Disfruta de los últimos estrenos del cine</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+   <script>
+    let next = document.querySelector(".next");
+        let prev = document.querySelector(".prev");
+        let slider = document.querySelector(".slider");
+
+        next.addEventListener("click", function(){
+            let slides = document.querySelectorAll(".slides");
+            slider.appendChild(slides[0]);
+        })
+        prev.addEventListener("click", function(){
+            let slides = document.querySelectorAll(".slides");
+            slider.prepend(slides[slides.length - 1]);
+        });
+   </script>
+</body>
+</html>
+</body>
+</html>
